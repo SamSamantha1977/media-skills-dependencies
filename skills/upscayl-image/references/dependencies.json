@@ -1,0 +1,26 @@
+{
+  "schema": "sam-media-skill-dependencies.v1",
+  "owner": "SamSamantha1977",
+  "publication_status": "STAGED_LOCALLY_GITHUB_NOT_PUBLISHED",
+  "notes": "Renseigner chaque URL GitHub Release reelle et son SHA-256 calcule APRES publication. Aucune URL ni hash ne sont inventes.",
+  "artifacts": {
+    "upscayl-ncnn": {
+      "windows-x64": {
+        "url": null,
+        "sha256": "805274df20ef1855133df60431fe73eb3da70ee1e37bee12b4c69f763a56c748",
+        "file": "upscayl-ncnn-windows-x64-1.1.0.zip",
+        "bytes": 233905761,
+        "published": false
+      }
+    },
+    "ffmpeg": {
+      "windows-x64": {
+        "url": null,
+        "sha256": "684fc9adee65ff4d0adaf5c269d00be490403e0e68938c6e0974fe31ae51a945",
+        "file": "ffmpeg-windows-x64-2025-02-13.zip",
+        "bytes": 130661781,
+        "published": false
+      }
+    }
+  }
+}

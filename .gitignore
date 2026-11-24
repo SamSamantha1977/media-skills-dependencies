@@ -1,0 +1,6 @@
+**/__pycache__/
+**/.runtime/
+*.pyc
+.env
+**/github-token.txt
+GitHub_Release_Assets/
