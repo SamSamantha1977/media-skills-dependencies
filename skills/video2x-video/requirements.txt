@@ -1,1 +1,0 @@
-# Standard Python library only. FFmpeg/FFprobe required externally.

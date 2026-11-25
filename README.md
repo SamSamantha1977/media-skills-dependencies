@@ -1,23 +1,21 @@
-# Media Skills for OpenAI (SamSamantha1977)
+# Dépôt historique : media-skills-dependencies
 
-Deux skills Python 3.11+ independantes :
+Ce dépôt avait regroupé par erreur deux skills distinctes. Les sources et archives actives
+ont été déplacées vers **deux dépôts indépendants** :
 
-- Upscayl-Image : resize et compress avec Pillow ; enhance lorsque Upscayl NCNN et ses modeles sont disponibles.
-- Video2X-Video : resize, interpolate via FFmpeg minterpolate sans RIFE, compress ; enhance avec Video2X RealESRGAN et GPU compatible.
+- **UpScalImg (images / Upscayl)** : https://github.com/SamSamantha1977/UpScalImg
+  - Skill Python : https://github.com/SamSamantha1977/UpScalImg/releases/download/v1.0.1/upscayl-image.zip
+  - Dépendances natives : https://github.com/SamSamantha1977/UpScalImg/releases/tag/deps-v1.0.0
+- **UpScalVids (vidéos / Video2X)** : https://github.com/SamSamantha1977/UpScalVids
+  - Skill Python : https://github.com/SamSamantha1977/UpScalVids/releases/download/v1.0.1/video2x-video.zip
+  - Dépendances natives : https://github.com/SamSamantha1977/UpScalVids/releases/tag/deps-v1.0.0
 
-## Installer les skills
-Archives legeres dist/upscayl-image.zip et dist/video2x-video.zip, moins de 50 Mo.
-Elles ciblent le format Skills API OpenAI ; ChatGPT n'assure pas l'acces reseau, GPU ou l'installation de binaires.
-Scripts dans skills/<nom>/scripts/run.py. Python 3.11+.
-Verifier via python scripts/dependencies.py --check.
+Le dépôt présent n'est plus utilisé pour la distribution. Son état antérieur,
+avec les fichiers de la distribution initialement mélangée, est conservé
+dans la branche **archive/mixed-before-split-20261125**.
 
-## Binaires lourds (non publies)
-Les paquets FFmpeg/FFprobe, Upscayl NCNN et Video2X NCNN Windows sont prepares hors du depot.
-docs/native-asset-checksums.json contient leurs SHA-256.
-Aucune URL de telechargement n'est activee dans les manifests tant que les assets ne sont pas publies et leurs licences verifiees.
+Ne pas utiliser les anciens manifests et chemins skills/ ou dist/ de ce dépôt.
+Ils n'ont plus le rôle de sources canoniques.
 
-## Documentation
-Consulter SKILL.md et references/RUNTIME.md de chaque skill, et docs/LEGAL_REVIEW.md.
-Ne pas ajouter de jeton GitHub aux sources.
-
-Ce depot est independant de SamSamantha1977/Cassandre et n'en modifie pas les releases.
+Les binaires Windows et les modèles ont leurs propres licences ; les sources Python
+et notices de chaque projet sont consultables dans leurs dépôts respectifs.
